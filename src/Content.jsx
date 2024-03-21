@@ -66,13 +66,15 @@ export function Content() {
   useEffect(handleIndexTeams, []);
 
   return (
-    <div>
-      <h1>USC Football's Greatest Teams</h1>
-      <TeamsNew onCreateTeam={handleCreateTeam} />
-      <TeamsIndex teams={teams} onShowTeam={handleShowTeam} />
-      <Modal show={isTeamsShowVisible} onClose={handleClose}>
-        <TeamsShow team={currentTeam} onUpdateTeam={handleUpdateTeam} onDestroyTeam={handleDestroyTeam} />
-      </Modal>
-    </div>
+    <main>
+      <div className="container">
+        <h1>USC Football's Greatest Teams</h1>
+        <TeamsNew onCreateTeam={handleCreateTeam} />
+        <TeamsIndex teams={teams} onShowTeam={handleShowTeam} />
+        <Modal show={isTeamsShowVisible} onClose={handleClose}>
+          <TeamsShow team={currentTeam} onUpdateTeam={handleUpdateTeam} onDestroyTeam={handleDestroyTeam} />
+        </Modal>
+      </div>
+    </main>
   );
 }
