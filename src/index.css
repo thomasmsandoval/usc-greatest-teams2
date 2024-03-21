@@ -1,0 +1,11 @@
+#teams-index img {
+  width: 300px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: "https://usctrojans.com/images/2020/7/27/usc_trojans_football_coliseum_tickets.jpg?width=1000&height=563&mode=crop";
+}
